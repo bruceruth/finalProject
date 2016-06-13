@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :appointments
-  get 'basic_pages/home'
+  resources :appointments
+  root'basic_pages#home'
 
   get 'basic_pages/contact'
 
